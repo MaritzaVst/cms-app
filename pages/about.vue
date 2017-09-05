@@ -1,12 +1,27 @@
-<template>
-    <section>
-        <h1>About page</h1>
-        <div class="columns">
-            <div class="column">1</div>
-            <div class="column">2</div>
-            <div class="column">3</div>
-            <div class="column">4</div>
-            <div class="column">5</div>
-        </div>
+<template  lang="pug">
+    section
+        div.container
+            h1 About page
+            div#app
+                
     </section>
 </template>
+
+<script>
+    export default {
+        name: 'About',
+        metaInfo: {
+            title: 'About us',
+            htmlAttrs: {
+                class: ':D'
+            }
+        }
+    }
+</script>
+
+<style lang="scss">
+    body {
+        background: #fff;
+    }
+</style>
+

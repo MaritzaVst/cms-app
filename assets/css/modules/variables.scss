@@ -1,0 +1,86 @@
+$main-color: #fff;
+$primary-color: #fff;
+$secondary-color: #fff;
+
+$msg-error: #fff;
+$title-color: #fff;
+$fonts: #fff;
+$ic-color: #fff;
+$shadow: #fff;
+
+$menu-color: (
+    bkg: #000000,
+    font: #fff,
+    ic: #fff,
+    font-hover: #fff,
+    ic-hover: #fff
+);
+
+$header-color: (
+    bkg: #000000,
+    font: #fff,
+    ic: #fff,
+    font-hover: #fff,
+    ic-hover: #fff
+);
+
+$nav-filter-color: (
+    bkg: #000000,
+    font: #fff,
+    ic: #fff
+);
+
+$content-color: (
+    bkg: #000000,
+    font: #fff,
+);
+
+$footer:(
+    bkg: #000000,
+    font: #fff,
+    ic: #fff,
+    ic-hover: #fff,
+    font-hover: #fff
+);
+
+$loader-color: (
+    bkg: #000000,
+    border: #000000,
+);
+
+$btn-color: (
+    bkg: #fff,
+    border: #fff,
+    font: #fff,
+    bkg-hover: #fff,
+    font-hover: #fff
+);
+
+$table-color: (
+    bkg: #fff,
+    header: #fff,
+    border: #fff,
+    header-title: #fff,
+    row-hover-bkg: #fff,
+    row-hover-font: #fff,
+);
+
+$login-color: (
+    bkg: #fff,
+    content-bkg: #fff
+);
+
+$size: (
+    menu: 250px,
+    menu-font: 14px,
+    header: 250px,
+    header-font: 14px,
+    login-width: 250px,
+    logo: 250px,
+    title: 20px,
+    subtitle: 20px,
+    font: 16px,
+    ic: 14px,
+    footer-font: 14px,
+    btn-font: 12px
+);

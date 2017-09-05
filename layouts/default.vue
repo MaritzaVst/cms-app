@@ -1,53 +1,82 @@
-<template>
-  <div>
-    <div class="menu">Hola soy un menú</div>
-    <nuxt/>
-  </div>
+<template lang="pug">
+    div
+        ul.aside-menu
+            li.logo
+                img(src="../assets/images/menu-icons/logo.png" alt="")
+            li.menu-item
+                i.material-icons assignment
+                a(href="#") Sedes
+            li.menu-item
+                i.material-icons settings
+                a(href="#") Áreas académicas
+            li.menu-item
+                i.material-icons mail_outline
+                a(href="#") Cursos
+            li.menu-item
+                i.material-icons toys
+                a(href="#") Profesores
+        <nuxt/>
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+</script>
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+<style lang="scss">
+    @import '../assets/css/modules/variables.scss';
+  
+  html {
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+  ul {
+    width: map-get($size, "menu");
+    position: fixed;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    .logo {
+        text-align: center;
+        margin: 30px 0;
+        img {
+            width: 60%;
+            display: inline-block;
+        }
+    }
+    > li.menu-item {
+        padding: 15px 30px 15px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            &:before {
+                
+            }
+        }
+        i {
+            margin-right: 15px;
+        }
+        a {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
+  }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
