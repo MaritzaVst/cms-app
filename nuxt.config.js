@@ -1,3 +1,4 @@
 module.exports = { 
-    srcDir: './' 
+    srcDir: './',
+    plugins: ['~plugins/buefy']
 } 

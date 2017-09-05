@@ -5,11 +5,13 @@
     "dev": "./node_modules/.bin/nuxt"
   },
   "dependencies": {
+    "buefy": "0.5.1",
+    "bulma": "0.5.1",
     "nuxt": "1.0.0-rc6"
   },
   "config": {
-        "nuxt": {
-            "port": 4000
-        }
+    "nuxt": {
+      "port": 4000
     }
+  }
 }
