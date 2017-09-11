@@ -1,24 +1,17 @@
 <template lang="pug">
     div
-        ul.aside-menu
-            li.logo
-                img(src="../assets/images/menu-icons/logo.png" alt="")
-            li.menu-item
-                i.material-icons assignment
-                a(href="#") Sedes
-            li.menu-item
-                i.material-icons settings
-                a(href="#") Áreas académicas
-            li.menu-item
-                i.material-icons mail_outline
-                a(href="#") Cursos
-            li.menu-item
-                i.material-icons toys
-                a(href="#") Profesores
+        CpMenu
         <nuxt/>
 </template>
 
 <script>
+    import CpMenu from '~/components/Menu.vue'
+
+    export default {
+        components: {
+            CpMenu
+        }
+    }
 </script>
 
 <style lang="scss">
